@@ -1,0 +1,2 @@
+rootProject.name = "AS_6_GueessNumber"
+include ':app'

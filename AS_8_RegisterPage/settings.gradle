@@ -1,0 +1,2 @@
+rootProject.name = "AS_8_RegisterPage"
+include ':app'
