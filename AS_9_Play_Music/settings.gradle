@@ -1,0 +1,2 @@
+rootProject.name = "AS_9_Play_Music"
+include ':app'
