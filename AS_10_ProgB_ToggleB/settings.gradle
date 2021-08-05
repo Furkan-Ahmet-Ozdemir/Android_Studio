@@ -1,0 +1,2 @@
+rootProject.name = "AS_10_ProgB_ToggleB"
+include ':app'

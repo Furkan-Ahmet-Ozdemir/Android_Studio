@@ -1,40 +1,34 @@
-package com.opcd.as_9_play_music;
+package com.opcd.as_10_progb_toggleb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Message;
 import android.view.View;
 import android.widget.CompoundButton;
-import android.widget.Switch;
+import android.widget.ImageView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    private Switch switchMusic;
-    private MediaPlayer mediaPlayer;
+    private ToggleButton toggleButton;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        switchMusic = (Switch)findViewById(R.id.switch1);
-        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.overr);
+        toggleButton = (ToggleButton)findViewById(R.id.toggle);
+        imageView = (ImageView)findViewById(R.id.image23);
 
-        switchMusic.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b)
-                    mediaPlayer.start();
+                    imageView.setVisibility(View.VISIBLE);
                 else
-                    mediaPlayer.pause();
+                    imageView.setVisibility(View.INVISIBLE);
             }
         });
-
-
-
-        
 
 
     }
