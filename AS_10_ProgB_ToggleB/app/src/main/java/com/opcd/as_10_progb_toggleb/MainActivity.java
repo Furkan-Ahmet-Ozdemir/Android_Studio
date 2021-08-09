@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b)
                     imageView.setVisibility(View.VISIBLE);
-                else
+                else if (b == false)
                     imageView.setVisibility(View.INVISIBLE);
             }
         });
